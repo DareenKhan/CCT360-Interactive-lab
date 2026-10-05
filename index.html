@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Dareen</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="page-shell">
+
+    <header class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">CCT360 INTERACTIVE LAB</p>
+        <h1>Hi, I'm Dareen.</h1>
+        <p class="hero-copy">
+          I'm a Digital Enterprise Management student and an Operations Specialist
+          at Best Buy Canada, interested in technology, design, leadership, and creative digital experiences.
+        </p>
+      </div>
+
+      <div class="hero-card">
+        <span class="card-label">TIME OF DAY</span>
+        <strong id="greeting">Hello!</strong>
+        <p id="timeMessage">This part of the page changes depending on the current time.</p>
+      </div>
+    </header>
+
+    <section class="interaction-grid">
+
+      <article class="interaction-card">
+        <p class="eyebrow">MOUSE ACTION</p>
+        <h2>Explore my interests</h2>
+        <p>Click an interest to change the content below.</p>
+
+        <div class="interest-buttons">
+          <button class="interest-btn active" id="designBtn" onclick="changeInterest('design')">Design</button>
+          <button class="interest-btn" id="gamingBtn" onclick="changeInterest('gaming')">Gaming</button>
+          <button class="interest-btn" id="leadershipBtn" onclick="changeInterest('leadership')">Leadership</button>
+        </div>
+
+        <div class="interest-display">
+          <h3 id="interestTitle">Design</h3>
+          <p id="interestText">
+            I enjoy UI/UX design, Figma, visual layouts, and creating websites that feel polished and easy to use.
+          </p>
+        </div>
+      </article>
+
+      <article class="interaction-card">
+        <p class="eyebrow">KEYBOARD ACTION</p>
+        <h2>Switch my profile mode</h2>
+        <p>Press <strong>1</strong>, <strong>2</strong>, or <strong>3</strong>.</p>
+
+        <div class="key-list">
+          <div><kbd>1</kbd><span>Student</span></div>
+          <div><kbd>2</kbd><span>Designer</span></div>
+          <div><kbd>3</kbd><span>Leader</span></div>
+        </div>
+
+        <div class="profile-mode">
+          <span class="mode-number" id="modeNumber">01</span>
+          <h3 id="modeTitle">Student</h3>
+          <p id="modeText">
+            I study Digital Enterprise Management at the University of Toronto Mississauga and will be graduating in 2028.
+          </p>
+        </div>
+      </article>
+
+    </section>
+
+    <section class="time-section">
+      <div>
+        <p class="eyebrow">TIME ACTION</p>
+        <h2>This webpage changes depending on the current time of day.</h2>
+      </div>
+      <p>
+        The greeting and page colours automatically change depending on the current time of day.
+      </p>
+    </section>
+
+    <section class="about-strip">
+      <div>
+        <span class="stat-label">INTERESTS</span>
+        <strong>Tech · Design · Gaming</strong>
+      </div>
+      <div>
+        <span class="stat-label">TOOLS</span>
+        <strong>Figma · HTML · CSS</strong>
+      </div>
+      <div>
+        <span class="stat-label">WORK</span>
+        <strong>Operations Specialist · Best Buy Canada</strong>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
